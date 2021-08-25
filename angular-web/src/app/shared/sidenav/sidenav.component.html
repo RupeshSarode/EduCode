@@ -1,0 +1,54 @@
+<nav class="sidebar sidebar-offcanvas" id="sidenav">
+  <ul class="nav">
+    <!-- <li class="nav-item nav-profile">
+        <a href="javascript:;" class="nav-link">
+          <div class="nav-profile-image">
+            <img src="assets/images/faces/face1.jpg" alt="profile">
+            <span class="login-status online"></span>
+          </div>
+          <div class="nav-profile-text">
+            <span class="font-weight-bold mb-2">David Grey. H</span>
+            <span class="text-secondary text-small">Project Manager</span>
+          </div>
+          <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+        </a>
+      </li> -->
+    <li class="nav-item" [ngClass]="{ 'active': dashboard.isActive }">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive #dashboard="routerLinkActive">
+        <span class="menu-title">Dashboard</span>
+        <i class="mdi mdi-home menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ 'active': icons.isActive }">
+      <a class="nav-link" routerLink="icons/mdi" routerLinkActive #icons="routerLinkActive">
+        <span class="menu-title">Icons</span>
+        <i class="mdi mdi-contacts menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ 'active': python.isActive }">
+      <a class="nav-link" routerLink="/python" routerLinkActive #python="routerLinkActive">
+        <span class="menu-title">Python</span>
+        <i class="mdi mdi-language-python menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ 'active': java.isActive }">
+      <a class="nav-link" routerLink="/java" routerLinkActive #java="routerLinkActive">
+        <span class="menu-title">JAVA</span>
+        <i class="mdi mdi-language-java menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ 'active': php.isActive }">
+      <a class="nav-link" routerLink="/php" routerLinkActive #php="routerLinkActive">
+        <span class="menu-title">PHP</span>
+        <i class="mdi mdi-language-php menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ 'active': html.isActive }">
+      <a class="nav-link" routerLink="/html" routerLinkActive #html="routerLinkActive">
+        <span class="menu-title">HTML</span>
+        <i class="mdi mdi-language-html5 menu-icon"></i>
+      </a>
+    </li>
+
+  </ul>
+</nav>
